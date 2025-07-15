@@ -14,32 +14,32 @@
 
 🎓 MSc Computer Science (KC College, Mumbai - 2025)  
 📊 Passionate about turning data into actionable insights  
-📈 Strong foundation in **Time Series Forecasting**, **Data Analytics**, and **AI Tool Evaluation**  
-🧠 Currently exploring **LLMs**, **Streamlit**, and **Python Automation**  
-📈 Building dashboards using **Tableau** & reports with **Power BI**  
-🎥 Sharing knowledge on [Instagram @codewithanjalii](https://www.instagram.com/codewithanjalii)
+📈 Specialized in **Time Series Forecasting**, **Data Analytics**, and **AI Tool Evaluation**  
+🧠 Learning **LLMs**, **Streamlit**, and **Python Automation**  
+📊 Creating dashboards using **Tableau** & reports with **Power BI**  
+🎥 Sharing tech content on [Instagram @codewithanjalii](https://www.instagram.com/codewithanjalii)
 
 ---
 
 ### 🔬 Featured Projects
 
 - **⏳ Time Series Forecasting Tool**  
-  ▸ Built using ARIMA, LSTM, Prophet & Hybrid models  
-  ▸ Performance metrics: MAE, RMSE, MAPE  
-  ▸ Gradio interface for user interaction
+  ▸ Built with ARIMA, LSTM, Prophet & Hybrid models  
+  ▸ Evaluated using MAE, RMSE, MAPE  
+  ▸ Interactive Gradio UI for user testing
 
 - **📊 Tableau Dashboards**  
-  ▸ Built multiple interactive dashboards for business reporting  
-  ▸ Explored KPIs, filters, dynamic charts, and storyboards  
-  ▸ [Link your Tableau Public Profile](https://public.tableau.com/app/profile/anjali.yadav2723/vizzes)
+  ▸ Built multiple business dashboards using Tableau  
+  ▸ Showcasing dynamic visualizations, filters & KPIs  
+  ▸ 🌐 [View My Tableau Public Profile](https://public.tableau.com/app/profile/anjali.yadav2723/vizzes)
 
 - **🤖 AI Tool Evaluation System**  
-  ▸ Compared AI tools for automation tasks  
-  ▸ Analyzed strengths, weaknesses & best-fit use cases
+  ▸ Benchmarked popular AI tools for performance & accuracy  
+  ▸ Mapped use-cases, limitations, and ideal scenarios
 
-- **📞 IVR Automation System**  
-  ▸ Designed & tested IVR logic using Avaya AOD  
-  ▸ Handled call flows, debugging, and live deployments
+- **📞 IVR Call Flow Automation**  
+  ▸ Developed & tested IVR flows with Avaya AOD  
+  ▸ Involved in production deployment and client coordination
 
 ---
 
@@ -71,4 +71,3 @@
 I love learning, building, and sharing.  
 Let’s collaborate and grow together 🚀  
 📩 Reach out if you want to work on something cool!
-

@@ -1,145 +1,62 @@
+<h1 align="center">Hi 👋, I'm Anjali Yadav</h1>
+<h3 align="center">🚀 Data Science Enthusiast | 💻 Python Developer | 🎓 MSc CS Graduate</h3>
 
-import { useState, useCallback } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Upload, FileText, TrendingUp } from 'lucide-react';
-import { motion } from 'framer-motion';
+<p align="center">
+  <a href="https://codewithanjalii.github.io/" target="_blank">🌐 My Website</a> •
+  <a href="https://www.linkedin.com/in/anjali-yadav-1a7921215/" target="_blank">🔗 LinkedIn</a> •
+  <a href="mailto:hello.codewithanjalii@gmail.com">📩 Email 1</a> •
+  <a href="mailto:ay4567430@gmail.com">📩 Email 2</a>
+</p>
 
-interface DataUploaderProps {
-  onDataUpload: (data: any) => void;
-}
+---
 
-const DataUploader = ({ onDataUpload }: DataUploaderProps) => {
-  const [isDragOver, setIsDragOver] = useState(false);
+### 💡 About Me
 
-  const generateSampleData = () => {
-    const baseValue = 100;
-    const trend = 0.1;
-    const seasonality = 20;
-    const noise = 10;
-    
-    const data = Array.from({ length: 365 }, (_, i) => {
-      const date = new Date(2023, 0, i + 1);
-      const trendValue = baseValue + (i * trend);
-      const seasonalValue = seasonality * Math.sin((2 * Math.PI * i) / 365);
-      const noiseValue = (Math.random() - 0.5) * noise;
-      
-      return {
-        date: date.toLocaleDateString(),
-        value: Math.max(0, trendValue + seasonalValue + noiseValue),
-        timestamp: date.getTime()
-      };
-    });
-    
-    onDataUpload(data);
-  };
+- 🎓 MSc Computer Science (2025) – KC College, Mumbai  
+- 📊 Specialized in Time Series Forecasting, AI Evaluation, and IVR Systems  
+- 📈 Building projects using ARIMA, LSTM, Prophet, Hybrid models  
+- 🧠 Exploring LLMs, RAG pipelines, and Python automation  
+- 🎥 Sharing coding tips and tech tutorials on [Instagram @codewithanjalii](https://www.instagram.com/codewithanjalii)
 
-  const handleDragOver = useCallback((e: React.DragEvent) => {
-    e.preventDefault();
-    setIsDragOver(true);
-  }, []);
+---
 
-  const handleDragLeave = useCallback(() => {
-    setIsDragOver(false);
-  }, []);
+### 🔬 Featured Projects
 
-  const handleDrop = useCallback((e: React.DragEvent) => {
-    e.preventDefault();
-    setIsDragOver(false);
-    // File handling would go here
-    generateSampleData(); // For demo purposes
-  }, []);
+- **⏳ Time Series Forecasting Tool**  
+  → Built with ARIMA, LSTM, Prophet & Hybrid models  
+  → Evaluated using MAE, RMSE, MAPE  
+  → Includes interactive UI with Gradio  
 
-  return (
-    <div className="max-w-4xl mx-auto space-y-6">
-      <Card className="bg-gray-800/50 border-gray-700 backdrop-blur-sm">
-        <CardHeader className="text-center">
-          <CardTitle className="text-2xl text-white">Upload Your Time Series Data</CardTitle>
-          <CardDescription className="text-gray-300">
-            Upload CSV files with date and value columns, or use our sample dataset
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-6">
-          {/* Upload Area */}
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className={`border-2 border-dashed rounded-lg p-12 text-center transition-all ${
-              isDragOver
-                ? 'border-purple-400 bg-purple-400/10'
-                : 'border-gray-600 hover:border-gray-500'
-            }`}
-            onDragOver={handleDragOver}
-            onDragLeave={handleDragLeave}
-            onDrop={handleDrop}
-          >
-            <Upload className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-lg font-semibold text-white mb-2">
-              Drag and drop your CSV file here
-            </h3>
-            <p className="text-gray-400 mb-4">
-              or click to browse files
-            </p>
-            <Button variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-700">
-              Browse Files
-            </Button>
-          </motion.div>
+- **🤖 AI Tool Evaluation System**  
+  → Benchmarked AI tools on performance and use-case fit  
+  → Identified best tools for different AI tasks  
 
-          {/* Sample Data Options */}
-          <div className="grid md:grid-cols-3 gap-4">
-            {[
-              {
-                title: 'Sales Data',
-                description: 'Monthly sales with seasonal patterns',
-                icon: TrendingUp,
-                trend: 'Upward trend with seasonality'
-              },
-              {
-                title: 'Stock Prices',
-                description: 'Daily stock price movements',
-                icon: FileText,
-                trend: 'Volatile with trend'
-              },
-              {
-                title: 'Weather Data',
-                description: 'Temperature readings over time',
-                icon: TrendingUp,
-                trend: 'Strong seasonal patterns'
-              }
-            ].map((sample, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Card 
-                  className="bg-gray-700/50 border-gray-600 hover:border-purple-500 transition-all cursor-pointer"
-                  onClick={generateSampleData}
-                >
-                  <CardContent className="p-4 text-center">
-                    <sample.icon className="w-8 h-8 text-purple-400 mx-auto mb-2" />
-                    <h4 className="font-semibold text-white mb-1">{sample.title}</h4>
-                    <p className="text-sm text-gray-400 mb-2">{sample.description}</p>
-                    <span className="text-xs text-purple-300">{sample.trend}</span>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
+- **📞 IVR Call Flow Automation**  
+  → Developed IVR logic using Avaya AOD  
+  → Handled testing, customer coordination, and Go-Live  
 
-          <div className="text-center">
-            <Button
-              onClick={generateSampleData}
-              className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3"
-            >
-              Use Sample Dataset
-              <TrendingUp className="ml-2 w-4 h-4" />
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
-    </div>
-  );
-};
+---
 
-export default DataUploader;
+### 🧰 Tech & Tools
+
+![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=python)
+![SQL](https://img.shields.io/badge/-SQL-blue?style=flat-square&logo=mysql)
+![Power BI](https://img.shields.io/badge/-PowerBI-yellow?style=flat-square&logo=powerbi)
+![Gradio](https://img.shields.io/badge/-Gradio-ff69b4?style=flat-square&logo=python)
+![Streamlit](https://img.shields.io/badge/-Streamlit-white?style=flat-square&logo=streamlit)
+![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
+![VS Code](https://img.shields.io/badge/-VSCode-blue?style=flat-square&logo=visualstudiocode)
+
+---
+
+### 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=codewithanjalii&show_icons=true&theme=radical" alt="Anjali's GitHub Stats" />
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=codewithanjalii&layout=compact&theme=radical" alt="Top Languages" />
+</p>
+
+---
+
+✨ **Thank you for visiting!** Let's collaborate, build cool things, and grow together 🚀  
